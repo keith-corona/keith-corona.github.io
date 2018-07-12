@@ -21,7 +21,8 @@
 
 <!----------- Main Info ----------->
     <main>
-      <h2>Welcome to my online portfolio.</h2><p>Take a look around; drop me a line; have fun.</p>
+      <h2>Welcome to my online portfolio.</h2>
+      <p>Take a look around; drop me a line; have fun.</p>
 
       <section>
         <h2><a href="#about">About</a></h2>
@@ -40,7 +41,18 @@
 
     <form>
         <h2><a href="#contact">Contact</a></h2>
+        <label for="name">Spell out your name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+        <label for="email">What's your email address?</label>
+        <input type="email" name="email" id="email" placeholder="name@email.com" required>
+
+        <label for="message">What's on your mind?</label>
+        <textarea name="message" id="message" rows="3" cols="33" maxlength="200" placeholder="Enter your message here please"></textarea>
+
+        <button name="sumbit" type="submit" value="submit-true" disabled>Send your message</button>
     </form>
+    
     </main>
 
 <!----------- Footer ----------->
