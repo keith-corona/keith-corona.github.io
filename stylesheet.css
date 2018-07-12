@@ -4,5 +4,53 @@
 }
 
 #wrapper {
-  background: rgba(100, 144, 142,.65);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(200, 228, 226,.65);
+}
+
+label,
+input,
+button {
+  display: block;
+}
+
+section {
+  margin: 3em 0;
+}
+
+
+/******** Nav ********/
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style: none;
+  margin: .25em .50em;
+}
+
+
+
+/******** Footer ********/
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em;
+  margin: 5em 3em;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .025em solid #000;
+  height: 6em;
+  width: 15em;
 }
