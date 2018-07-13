@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
   <head>
+    <title>Keith's site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
 
 <div id="wrapper">
   <body>
+    <div class="header-container">
       <header>
-        <h1>Keith Corona's Web Development Portfolio</h1>
+        <h1 id="site-title">Keith Corona's
+          <span class="line">Web Development</span>
+          <span class="line">Portfolio</span>
+        </h1>
       </header>
 
   <!----------- Main Navigation ----------->
       <nav>
         <ul>
           <li><a class="nav-link" id="home" href="#home">Home</a></li>
-          <li><a class="nav-link" id="about" href="#about">About</a></li>
-          <li><a class="nav-link" id="projects" href="#projects">Projects</a></li>
-          <li><a class="nav-link" id="contact" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </div>
+
 
   <!----------- Main Info ----------->
       <main>
@@ -28,22 +38,34 @@
         <p>Take a look around; drop me a line; have fun.</p>
 
         <section>
-          <h2><a href="#about">About</a></h2>
-          <p>Who am I?</p>
+          <h3 id="about">About</h3>
+          <p>As a child, I was always attracted to the challenges - the things people said I couldn't do or couldn't achieve. Also as a child, I was often saddened because I wanted hundreds of lives to live so that I could experience an entire lifetime not just a glimpse into the life of a fisherman, a sailor, a soldier, a writer, an artist, a farmer, or whatever else.</p><br />
+
+          <p>In a compromise of taking the challenge of living a hundred authentic lives, I have subconciously lead a life that could be interpreted as without direction, but in reality, it has been a life lead by the direction of experience. And in experience, I am rich.</p><br />
+
+          <p>I am on a path to another change by segueing into web development. I am hoping that this path will allow me to express my creativity in a functional way - mixing my love of art and design with my obsession for purpose.</p><br />
+
+          <p>And so, here is my introduction. My work draws influence from my travels, my childhood, my adulthood, and my experiences. I am an aspiring web developer who enjoys front-end work at the moment, though I think some back-end languages seem pretty interesting and worth learning in the future.</p><br />
+
+          <p>If anything here interests you, or you have a question for me, please reach out.</p><br />
+
+          <p>-Keith</p>
         </section>
 
         <section>
-          <h2><a href="#projects">Projects</a></h2>
-          <div class="project-block"></div>
-          <div class="project-block"></div>
-          <div class="project-block"></div>
-          <div class="project-block"></div>
-          <div class="project-block"></div>
-          <div class="project-block"></div>
+          <h3 id="projects">Projects</h3>
+          <div class="project-container">
+            <div class="project-block"></div>
+            <div class="project-block"></div>
+            <div class="project-block"></div>
+            <div class="project-block"></div>
+            <div class="project-block"></div>
+            <div class="project-block"></div>
+          </div>
       </section>
 
       <form>
-          <h2><a href="#contact">Contact</a></h2>
+          <h3 id="contact">Contact</h3>
           <label for="name">Spell out your name:</label>
           <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
@@ -60,9 +82,22 @@
 
   <!----------- Footer ----------->
       <footer>
-        <div class="col">Block one</div>
-        <div class="col">Block two</div>
-        <div class="col">Block three</div>
+        <div class="block">
+          <ul>
+            <li>
+              <a href="https://www.twitter.com/fakekeithcorona" target="_blank"><img src="img/twitter.png" alt="Twitter logo" /></a>
+            </li>
+            <li>
+              <a href="https://www.github.io/keith-corona" target="_blank"><img src="img/github.png" alt="Github logo" /></a>
+            </li>
+            <li>
+              <a href="https://www.codepen.io/k_corona" target="_blank"><img src="img/codepen.png" alt="Codepen logo" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block">Block two</div>
+        <div class="block">Block three</div>
       </footer>
 
     </body>
