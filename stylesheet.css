@@ -132,6 +132,7 @@ footer {
   align-items: center;
   height: auto;
   width: 15em;
+  text-align: center;
 }
 
 footer li {
@@ -153,6 +154,15 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.email {
+  color: rgba(217,024,006,1);
+  border: .125em rgba(217,024,006,1) solid;
+}
+
+.email:hover {
+  background: #fff;
 }
 
 /********** Type ************/
