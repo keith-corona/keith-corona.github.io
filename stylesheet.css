@@ -7,6 +7,7 @@
 /******** Wrapper ********/
 
 #wrapper {
+  font-family: Jura, sans-serif;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -34,18 +35,25 @@ section {
 
 /******** Header Container ********/
 .header-container {
-  width: 95%;
-  padding: 1em;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-height: 6em;
+  padding: 1em 3em;
   margin-bottom: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: .125em #f2f2f2 solid;
-  border-top: .125em #f2f2f2 solid;
+  border-bottom: .33em rgba(131, 194, 191,.45) solid;
+  background: #fff;
+  z-index: 100;
+
+  transition: all ease 2s;
 }
 
 #site-title {
   font-size: .5em;
+  color: rgba(131, 194, 191,1);
 }
 
 .line {
@@ -56,25 +64,35 @@ section {
 nav ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 li {
   list-style: none;
   margin: .25em .75em;
-  border: .125em #000 solid;
+  border: .125em rgba(131, 194, 191,1) solid;
 }
 
 nav li {
+  width: 5.25em;
   border-radius: .25em 1.25em;
+  text-align: center;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
-  padding: 1em;
+  color: rgba(131, 194, 191,1);
+  padding: .75em 0;
 }
 
+nav li:hover {
+  background: rgba(131, 194, 191,.33);
+}
+
+nav a:hover {
+  color: #fff;
+}
 
 /******** Projects ********/
 .project-container {
@@ -88,7 +106,14 @@ a {
 }
 
 section:nth-child(2n) {
+  align-self: center;
+  width: 100vw; /*Why does this create an X-scroll at 100vw?!?!?!?!*/
+  max-width: 100%;
   background: rgba(131, 194, 191,1);
+}
+
+body {
+  overflow-x: hidden; /*This is here to prevent horizontal scroll from above issue*/
 }
 
 .project-block {
@@ -96,8 +121,14 @@ section:nth-child(2n) {
   height: 12em;
   width: 9em;
   margin: 2em;
-  border: .05em solid #f2f2f2;
+  border: .20em solid #BABABA;
   border-radius: 33% 33% 0 0;
+  overflow: hidden;
+}
+
+.project-block > img {
+  height: 12em;
+  opacity: 33%;
 }
 
 .project-block:hover::after {
@@ -110,6 +141,45 @@ section:nth-child(2n) {
   content: "Project 1";
   color: #fff;
   text-align: center;
+}
+
+
+/******** Form ********/
+input,
+textarea {
+  width: 100%;
+  height: 2.5em;
+  padding: 0.5em;
+  font-size: 1.33em;
+  margin: 0.5em 0;
+  border: .125em rgba(131, 194, 191,1) solid;
+  border-radius: 0.33em;
+}
+
+textarea {
+  height: 15em;
+}
+
+label {
+  font-size: 1.33em;
+  border-radius: 0.33em;
+}
+
+button {
+  height: 3em;
+  width: 12em;
+  padding: .5em;
+  margin: 0 auto;
+  border-radius: 0.33em;
+  background: rgba(131, 194, 191,1);
+
+  cursor: not-allowed;
+}
+
+
+input:focus,
+textarea:focus {
+  background: #F8FBB5;
 }
 
 /******** Footer ********/
@@ -133,6 +203,10 @@ footer {
   height: auto;
   width: 15em;
   text-align: center;
+}
+
+.block>a {
+  padding: 0.75em;
 }
 
 footer li {
@@ -166,8 +240,10 @@ footer ul {
 }
 
 /********** Type ************/
+
 h2 {
   font-size: 4em;
+  margin-bottom: .25em;
 }
 
 h3 {
@@ -175,10 +251,50 @@ h3 {
   margin-bottom: 1.5em;
 }
 
-p {
+.about-me p {
   display: inline; /*allows for bg color to be split*/
   font-family: monospace;
   background-color: #fff;
   font-size: 1.35em;
   line-height: 1.6em;
+  margin-bottom: 2em;
+}
+
+.about-me {
+  max-width: 80em;
+}
+
+.project-container {
+  max-width: 50em;
+}
+
+/********* Nav scroll ************/
+
+.shrink {
+  height: 2em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.shrink header {
+  visibility: hidden;
+}
+
+.shrink  a:hover {
+  font-weight: bold;
+  height: auto;
+  width: auto;
+}
+
+.shrink li{
+  border: none;
+}
+
+.shrink li:hover {
+  background: none;
+}
+
+.shrink .nav-link:hover {
+  background: none;
+  color: #0D767B;
 }

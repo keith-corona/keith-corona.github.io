@@ -8,6 +8,8 @@
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
 <div id="wrapper">
@@ -34,20 +36,21 @@
 
   <!----------- Main Info ----------->
       <main>
-        <h2>Welcome to my online portfolio.</h2>
+        <h2>Welcome to my portfolio</h2>
         <p>Take a look around; drop me a line; have fun.</p>
 
-        <section>
+        <section class="about-me">
           <h3 id="about">About</h3>
           <p>As a child, I was always attracted to the challenges - the things people said I couldn't do or couldn't achieve. Also as a child, I was often saddened because I wanted hundreds of lives to live so that I could experience an entire lifetime not just a glimpse into the life of a fisherman, a sailor, a soldier, a writer, an artist, a farmer, or whatever else.</p><br />
+          <br/>
 
-          <p>In a compromise of taking the challenge of living a hundred authentic lives, I have subconciously lead a life that could be interpreted as without direction, but in reality, it has been a life lead by the direction of experience. And in experience, I am rich.</p><br />
+          <p>In a compromise of taking the challenge of living a hundred authentic lives, I have subconciously led a life that could be interpreted as without direction, but in reality, it has been a life led by the direction of experience. And in experience, I am rich.</p><br /><br/>
 
-          <p>I am on a path to another change by segueing into web development. I am hoping that this path will allow me to express my creativity in a functional way - mixing my love of art and design with my obsession for purpose.</p><br />
+          <p>I am on a path to another change by segueing into web development. I am hoping that this path will allow me to express my creativity in a functional way - mixing my love of art and design with my obsession for purpose.</p><br /><br/>
 
-          <p>And so, here is my introduction. My work draws influence from my travels, my childhood, my adulthood, and my experiences. I am an aspiring web developer who enjoys front-end work at the moment, though I think some back-end languages seem pretty interesting and worth learning in the future.</p><br />
+          <p>And so, here is my introduction. My work draws influence from my travels, my childhood, my adulthood, and my experiences. I am an aspiring web developer who enjoys front-end work at the moment, though I think some back-end languages seem pretty interesting and worth learning in the future.</p><br /><br/>
 
-          <p>If anything here interests you, or you have a question for me, please reach out.</p><br />
+          <p>If anything here interests you, or you have a question for me, please reach out.</p><br /><br/>
 
           <p>-Keith</p>
         </section>
@@ -55,17 +58,19 @@
         <section>
           <h3 id="projects">Projects</h3>
           <div class="project-container">
-            <div class="project-block"></div>
-            <div class="project-block"></div>
-            <div class="project-block"></div>
-            <div class="project-block"></div>
-            <div class="project-block"></div>
-            <div class="project-block"></div>
+            <div class="project-block"><img src="img/sbda.png" alt="SBDA preview" /></div>
+            <div class="project-block"><img src="img/ems.png" alt="UCSB EMS program preview" /></div>
+            <div class="project-block"><img src="img/sbda.png" alt="SBDA preview" /></div>
+            <div class="project-block"><img src="img/sbda.png" alt="SBDA preview" /></div>
+            <div class="project-block"><img src="img/sbda.png" alt="SBDA preview" /></div>
+            <div class="project-block"><img src="img/sbda.png" alt="SBDA preview" /></div>
           </div>
       </section>
 
-      <form>
-          <h3 id="contact">Contact</h3>
+
+      <section>
+        <h3 id="contact">Contact</h3>
+        <form class="project-container">
           <label for="name">Spell out your name:</label>
           <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
@@ -73,11 +78,11 @@
           <input type="email" name="email" id="email" placeholder="name@email.com" required>
 
           <label for="message">What's on your mind?</label>
-          <textarea name="message" id="message" rows="3" cols="33" maxlength="200" placeholder="Enter your message here please"></textarea>
+          <textarea name="message" id="message" rows="3" cols="33" maxlength="200" placeholder="Enter your message here please..."></textarea>
 
           <button name="sumbit" type="submit" value="submit-true" disabled>Send your message</button>
-      </form>
-
+        </form>
+      </section>
       </main>
 
   <!----------- Footer ----------->
@@ -107,4 +112,5 @@
     </body>
 
 </div>
+<script src="script.js"></script>
 </html>
