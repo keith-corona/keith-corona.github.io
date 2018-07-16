@@ -346,6 +346,11 @@ h3 {
       height: auto;
     }
 
+    .shrink nav li {
+      border: .125em solid rgba(131, 194, 191,1);
+      transition: all ease-in 1s;
+    }
+
     header {
       display: none;
     }
